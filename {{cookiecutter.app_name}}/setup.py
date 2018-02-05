@@ -24,7 +24,7 @@ setup(
     long_description=long_description,
     url='https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.app_name}}',
     download_url='https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.app_name}}/tarball/' + __version__,
-    license='BSD',
+    license='Apache',
     classifiers=[
       'Development Status :: 3 - Alpha',
       'Intended Audience :: Developers',
@@ -36,5 +36,6 @@ setup(
     author='{{cookiecutter.full_name}}',
     install_requires=install_requires,
     dependency_links=dependency_links,
-    author_email='{{cookiecutter.email}}'
+    author_email='{{cookiecutter.email}}',
+    scripts=['bin/{{cookiecutter.app_name}}']
 )
