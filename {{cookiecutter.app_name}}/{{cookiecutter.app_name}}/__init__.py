@@ -24,11 +24,11 @@ def main():
     # Now do stuff!
     assert args
 
-def process_args(args=False):
+def process_args(argv=None):
     """Process any commandline arguments"""
     parser = argparse.ArgumentParser(description=DESCRIPTION,
                                      version=VERSION)
-    args = parser.parse_args(args)
+    args = parser.parse_args(argv)
     return args
 
 if __name__ == "__main__":
