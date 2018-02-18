@@ -1,4 +1,4 @@
-CookieCutter Python-Mac-Admin-Tool 
+CookieCutter Py-Mac-Tool 
 =============================
 
 A minimal cookiecutter template for a python tool, with a focus on deployment to macOS.
@@ -28,9 +28,18 @@ Using the template
 ##### Clone the template #####
 
     $ pip install cookiecutter
-    $ cookiecutter https://github.com/gkluoe/cookiecutter-python-macadmin-tool.git
+    $ cookiecutter https://github.com/gkluoe/cookiecutter-py-mac-tool.git
 
 You will be asked about your basic info (name, project name, app name, etc.). This info will be used in your new project.
+
+##### Init Git #####
+
+
+    $ git init .
+    $ git remote add origin https://github.com/[you]/[projectname].git
+    $ git add .
+    $ git push origin master
+
  
 ##### Add some code #####
 
@@ -51,16 +60,10 @@ Included are 2 sample tests, which:
     $ python setup.py test
 
 ##### Make a release #####
-Once you're happy with your functionality, you can make a release. First, you'll need to make sure the code is committed to a git repo:
 
-    $ git init .
-    $ git remote add origin https://github.com/[you]/[projectname].git
-    $ git add .
-    $ git push origin master
- 
-Once you've done this once, you can run the release script:
+Once you're happy with your functionality, you can make a release. 
 
-    $ ./release.sh
+    $ ./release.sh [ major | minor | patch ]
 
 This creates a new tag and commits it locally. You'll then want to push the release to your git server:
 
