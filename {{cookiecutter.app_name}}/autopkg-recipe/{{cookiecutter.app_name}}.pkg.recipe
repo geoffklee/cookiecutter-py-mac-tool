@@ -66,7 +66,7 @@
                     <key>pkgroot</key>
                     <string>%bdist_root%</string>
                     <key>id</key>
-                    <string>com.github.{{cookiecutter.github_username}}.pkg.{{cookiecutter.version}}</string>
+                    <string>com.github.{{cookiecutter.github_username}}.pkg.{{cookiecutter.app_name}}</string>
                     <key>version</key>
                     <string>%VERSION%</string>
                     <key>options</key>
