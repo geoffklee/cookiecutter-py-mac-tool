@@ -32,12 +32,15 @@ Using the template
 
 You will be asked about your basic info (name, project name, app name, etc.). This info will be used in your new project.
 
-##### Init Git #####
-
+##### Initialise Git #####
+    
+At this point you'll want to make sure you have an empty git repository ready for your new project. 
+Great! Now you can import this project to it:
 
     $ git init .
     $ git remote add origin https://github.com/[you]/[projectname].git
     $ git add .
+    $ git commit -m 'Initial commit'
     $ git push origin master
 
  
