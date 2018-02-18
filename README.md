@@ -4,6 +4,7 @@ CookieCutter Py-Mac-Tool
 A minimal cookiecutter template for a python tool, with a focus on deployment to macOS.
 
 [cookiecutter](https://github.com/audreyr/cookiecutter)
+
 Inspired by: [cookiecutter-pipproject](https://github.com/wdm0006/cookiecutter-pipproject.git)
 
 Goals
@@ -25,14 +26,14 @@ It's deliberately minimal and is supposed to provide a more robust and scalable 
 Using the template
 ----------------------
 
-##### Clone the template #####
+#### Clone the template ####
 
     $ pip install cookiecutter
     $ cookiecutter https://github.com/gkluoe/cookiecutter-py-mac-tool.git
 
 You will be asked about your basic info (name, project name, app name, etc.). This info will be used in your new project.
 
-##### Initialise Git #####
+#### Initialise Git ####
     
 At this point you'll want to make sure you have an empty git repository ready for your new project. 
 Great! Now you can import this project to it:
@@ -44,13 +45,13 @@ Great! Now you can import this project to it:
     $ git push origin master
 
  
-##### Add some code #####
+#### Add some code ####
 
 The file `projectname/__init__.py` is set up so that you can add some arguments to the `process_args()` function, and then do something with them in `main()`.
 
 That's really all there is to it!
 
-##### Add some tests #####
+#### Add some tests ####
 
 The template is configured to be used with `pytest`. Any function named test_\*() in any file named test_\*.py inside the 'tests' folder will be collected and run as a test.
 
@@ -59,10 +60,10 @@ Included are 2 sample tests, which:
  1. Run your project against pylint (*test_lint()*)
  2. Check that the version number reported by the tool matches the version number in setup.py (*test_version()*)
 
-##### Run the tests #####
+#### Run the tests ####
     $ python setup.py test
 
-##### Make a release #####
+#### Make a release ####
 
 Once you're happy with your functionality, you can make a release. 
 
