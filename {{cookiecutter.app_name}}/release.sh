@@ -29,13 +29,15 @@ git pull origin master
 
 python setup.py test
 
-# First bump a new version - this creates a new git tag
+# Bump a new version - this creates a new git tag
 new_version="$(bumpversion --list patch | awk -F '=' '/new_version/ {print $2}')"
 
 # Pat on the back
-echo "Congratulations! You've created version ${new_version}. It hasn't"
-echo "yet been pushed to the git origin server though - you probably want to run:"
-echo ""
-echo "git push origin v${new_version}" now.
-
-
+echo "###################################################################"
+echo "# Congratulations! You've created version ${new_version}. It hasn't"
+echo "# yet been pushed to the git origin server, though."
+echo "#"
+echo "# Now, you probably want to run:"
+echo "#"
+echo "# git push origin v${new_version}"
+echo "###################################################################"

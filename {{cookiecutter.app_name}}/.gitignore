@@ -14,6 +14,7 @@ build
 dist
 .cache
 eggs
+.eggs
 parts
 var
 sdist
@@ -36,6 +37,9 @@ output/*/index.html
 
 # Sphinx
 docs/_build
+
+# Editors
+*.swp
 
 # Cookiecutter
 output/
