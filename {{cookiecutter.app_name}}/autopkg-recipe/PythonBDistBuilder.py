@@ -13,6 +13,7 @@
 # limitations under the License.
 """Processor to build a python distutils project"""
 import os
+import shutil
 from zipfile import ZipFile
 from subprocess import check_call
 # Pylint can't load autopkglib, so stop it moaning
@@ -53,6 +54,10 @@ class PythonBDistBuilder(Processor):
 
         # Now, unzip the built distribution to give us a file hierarchy
         bdist_root = self.env['RECIPE_CACHE_DIR'] + '/bdist_root'
+
+        # Make sure we have a clean target directory
+        if os.path.isdir(bdist_root):
+            shutil.rmtree(bdist_root)
         try:
             zipped = ZipFile('./dist/' + self.env['NAME'] +
                              '-' + self.env['VERSION'] + '.macOS.zip')
