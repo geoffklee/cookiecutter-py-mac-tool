@@ -11,6 +11,8 @@
 *.egg
 *.egg-info
 build
+dist
+.cache
 eggs
 parts
 var

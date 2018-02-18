@@ -1,7 +1,7 @@
 {
-	"full_name": "Geoff Lee",
-	"email": "",
-	"github_username": "gkluoe",
+	"full_name": "Your Name",
+	"email": "you@example.com",
+	"github_username": "your_github_name",
 	"project_name": "My Python Mac Admin Tool",
 	"app_name": "mymacadmintool",
 	"project_short_description": "A python tool to do some Mac admin tasks",

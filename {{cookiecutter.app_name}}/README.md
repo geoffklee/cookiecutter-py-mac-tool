@@ -12,15 +12,16 @@ Overview
 Installation / Usage
 --------------------
 
-To install use pip:
-
-    $ pip install {{ cookiecutter.app_name }}
-
-
-Or clone the repo:
+Clone the repo:
 
     $ git clone https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.app_name}}.git
     $ python setup.py install
+
+Or, build with autopkg:
+
+    $ autopkg repo-add https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.app_name}}/autopkg-recipe
+    $ autopkg run {{cookiecutter.app_name}}.pkg
+
     
 Contributing
 ------------
