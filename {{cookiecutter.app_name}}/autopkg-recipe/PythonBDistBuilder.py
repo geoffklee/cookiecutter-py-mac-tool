@@ -45,10 +45,10 @@ class PythonBDistBuilder(Processor):
         """Build and then unzip the distribution"""
         try:
             os.chdir(self.env['source_path'])
-            # Using the system python might produce unexpected 
-            # results if you are in a virtualenv. 
+            # Using the system python might produce unexpected
+            # results if you are in a virtualenv.
             # Equally, using the virtualenv python might produce
-            # unexpected results. The system python is probably 
+            # unexpected results. The system python is probably
             # what you're expecting.
             check_call(['/usr/bin/python', 'setup.py',
                         'bdist', '-p', 'macOS', '--formats', 'zip'])
