@@ -44,7 +44,7 @@ If a repository is found at https://github.com/yourusername/projectname, then yo
     Do you want to add it as a git remote?
     
  
-If you answer yes, the remote repository will be added as a git remote.
+If you answer yes, the remote repository will be added as a git remote, ready for you to push your first commit.
  
 #### Add some functionality ####
 
