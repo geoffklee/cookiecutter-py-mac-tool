@@ -40,9 +40,9 @@ A new directory will be created, matching your chosen app name, and a new local 
 At this point you'll probably want to make sure you have an empty git repository on a server ready for your new project. 
 If a repository is found at https://github.com/yourusername/projectname, then you'll be asked:
 
-    ```We found a remote git repository which looks like it matches this project.
-       Do you want to add it as a git remote?
-    ```
+    We found a remote git repository which looks like it matches this project.
+    Do you want to add it as a git remote?
+    
  
 If you answer yes, the remote repository will be added as a git remote.
  
