@@ -33,19 +33,20 @@ Using the template
 
 You will be asked about your basic info (name, project name, app name, etc.). This info will be used in your new project.
 
+A new directory will be created, matching your chosen app name, and a new local git repository will be initialised in it.
+
 #### Initialise Git ####
     
-At this point you'll want to make sure you have an empty git repository ready for your new project. 
-Great! Now you can import this project to it:
+At this point you'll probably want to make sure you have an empty git repository on a server ready for your new project. 
+If a repository is found at https://github.com/yourusername/projectname, then you'll be asked:
 
-    $ git init .
-    $ git remote add origin https://github.com/[you]/[projectname].git
-    $ git add .
-    $ git commit -m 'Initial commit'
-    $ git push origin master
-
+    ```We found a remote git repository which looks like it matches this project.
+       Do you want to add it as a git remote?
+    ```
  
-#### Add some code ####
+If you answer yes, the remote repository will be added as a git remote.
+ 
+#### Add some functionality ####
 
 The file `projectname/__init__.py` is set up so that you can add some arguments to the `process_args()` function, and then do something with them in `main()`.
 
