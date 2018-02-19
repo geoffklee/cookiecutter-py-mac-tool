@@ -27,8 +27,6 @@ setup(
     packages=find_packages(exclude=['docs', 'tests*']),
     include_package_data=True,
     author='{{cookiecutter.full_name}}',
-    install_requires=None,
-    dependency_links=None,
     setup_requires=['pytest-runner'],
     tests_require=['pytest', 'pylint'],
     author_email='{{cookiecutter.email}}',
