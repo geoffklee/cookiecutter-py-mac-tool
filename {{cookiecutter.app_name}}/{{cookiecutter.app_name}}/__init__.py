@@ -1,4 +1,4 @@
-# Copyright 2018 {{cookiecutter.full_name}}
+# Copyright 2019 {{cookiecutter.full_name}}
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,10 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 """The {{cookiecutter.app_name}} tool"""
-import argparse
 
-VERSION = "{{cookiecutter.version}}"
-DESCRIPTION = """This is the {{cookiecutter.app_name}} tool"""
+__version__ = "{{cookiecutter.version}}"
+__author__ = "{{cookiecutter.full_name}}"
+
+import argparse
 
 def main():
     """Main function - do useful stuff here!"""
@@ -24,12 +25,18 @@ def main():
     # Now do stuff!
     assert args
 
+
 def process_args(argv=None):
     """Process any commandline arguments"""
-    parser = argparse.ArgumentParser(description=DESCRIPTION,
-                                     version=VERSION)
+    # Use our module docstring as the description
+    parser = argparse.ArgumentParser(description=__doc__)
+
+    parser.add_argument('-v', '--version',
+                        action='version', version=__version__)
+
     args = parser.parse_args(argv)
     return args
+
 
 if __name__ == "__main__":
     main()

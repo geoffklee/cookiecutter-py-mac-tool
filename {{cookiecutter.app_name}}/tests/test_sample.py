@@ -1,6 +1,6 @@
 """ Some sample pytest tests """
 import subprocess
-from ConfigParser import ConfigParser
+from configparser import ConfigParser
 from pylint import epylint as lint
 from pytest import raises
 import {{cookiecutter.app_name}} 
@@ -10,8 +10,8 @@ def test_lint():
     (out, err) = lint.py_run('{{cookiecutter.app_name}}', return_std="True")
     result = out.read()
     if not '10.00/10' in result.split(" "):
-       print "Failed pylint!"
-       print result 
+       print("Failed pylint!")
+       print(result)
        assert False
 
 
@@ -33,9 +33,9 @@ def test_version(capsys):
     with raises(SystemExit): # Trap the SystemExit exception
         {{cookiecutter.app_name}}.process_args(['-v'])
 
-    # Stderr contains our version number
+    # Stdout contains our version number
     out, err = capsys.readouterr()
 
     # Do they match?
-    assert err.strip() == cfg_version
+    assert out.strip() == cfg_version
 

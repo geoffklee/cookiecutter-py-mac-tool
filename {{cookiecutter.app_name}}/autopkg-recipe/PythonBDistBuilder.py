@@ -53,7 +53,7 @@ class PythonBDistBuilder(Processor):
             check_call(['/usr/bin/python', 'setup.py',
                         'bdist', '-p', 'macOS', '--formats', 'zip'])
             self.output("Built dist at %s" % self.env['source_path'])
-        except BaseException, err:
+        except BaseException as err:
             raise ProcessorError("Can't build dist at %s: %s"
                                  % (self.env['source_path'], err))
 
